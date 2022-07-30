@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .ensemble{
+        display:flex;
+        width: 300px;
+        height: 250px;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+
+      .group{
+        position: relative;
+      }
+
+      .another-element{
+        position: relative;
+        bottom: 115px;
+      }
+    
+      .random{
+        background-color: black;
+        color: white;
+        cursor:pointer;
+        
+        display: inline-block;
+      }
+
+      .tooltip{
+        background-color: rgb(99, 37, 37);
+        color: white;
+        font-weight: bold;
+
+        position: absolute;
+        bottom:-50px;
+        left: 25px;
+        
+        opacity: 0;
+        transition: opacity 0.15s;
+
+        pointer-events:none;
+        white-space: nowrap;
+      }
+
+      .group:hover .tooltip{
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ensemble">
+      <!--Possibilité de replacement sans margin/padding avec position relative-->
+        <div class="another-element">another element</div>
+
+    <!--Il suffit d'un seul parent et le tooltip vient se placer sur le
+    ou les autres enfants du parent-->
+    <!--Si parent non-défini vient se placer au parent le plus haut,
+    le parent le plus haut initial étant body-->
+    <!--Ici il ne faut pas utiliser de margin/padding car ils sont pris
+    en compte lors du hover du group; puisque nous souhaitons que seul
+    le text active l'element caché (tooltip) il faut utiliser du flex ou
+    position et positionner comme on le souhaite-->
+      <div class="group">
+        <div class="random">zejepahjnzajkdnmkasn</div>
+        <div class="tooltip">This means: ok</div>
+      </div>
+    </div> 
+  </body>
+</html>

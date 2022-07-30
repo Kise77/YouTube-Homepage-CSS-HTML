@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        height: 3000px;
+        display: inline-block
+      }
+
+      .sell{
+        position: relative;
+      }
+
+      .tshirt-img{
+        width:200px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .sale-off{
+        background-color: black;
+        color: white;
+        padding: 4px 4px;
+
+        position: absolute;
+        right: 0;
+        top: 5px; 
+      }
+
+      .buy-menu{
+        opacity: 0.8;
+        background-color: white;
+
+        position: absolute;
+        bottom:0;
+        left: 0;
+        right:0;
+        height: 75px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        opacity:0;
+        transition: opacity 0.15s;
+        
+      }
+
+      .buy-button{
+        padding: 6px 10px;
+        border-radius: 0px;
+        border-width: 1px;
+        background-color: white;
+        cursor: pointer;
+        opacity:0;
+        transition: opacity 0.15s;
+      }
+
+      .sell:hover .buy-button{
+        opacity:1;
+      }
+
+      .sell:hover .buy-menu{
+        opacity: 0.8;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="sell">
+      <img class="tshirt-img" src="tshirt.jpg">
+      <div class="sale-off">20% OFF</div>
+      <div class="buy-menu">
+        <button class="buy-button">Add to Cart</button>
+      </div>
+    </div>  
+  </body>
+</html>

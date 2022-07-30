@@ -1,0 +1,112 @@
+.sidebar{
+  background-color: rgb(255,255,255);
+  width: 72px;
+
+  position: fixed;
+  left:0;
+  bottom:0;
+  top: 57px;
+  z-index: 200;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-text-flexbox{
+  height: 74px;
+  width: 72px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.icon-text-flexbox:hover{
+  background-color: rgb(231, 230, 230);
+  cursor: pointer;
+}
+
+.home-icon{
+  height: 24px;
+  width: 24px;
+  margin-bottom: 5px;
+
+}
+
+.explore-icon{
+  height: 24px;
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.subscriptions-icon{
+  height: 24px;
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.originals-icon{
+  height: 24px;
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.youtube-music-icon{
+  height: 24px;
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.library-icon{
+  height: 24px;
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.text-icon{
+  color: rgb(33,37,41);
+  font-size: 10px;
+  height: 15px;
+}
+
+/*Bonus SideBar
+@media (min-width: 1200px) {
+  
+  body{
+    padding-left: 150px;
+  }
+
+  .sidebar{
+    width: 150px;
+    align-items: start;
+
+  }
+  .icon-text-flexbox{
+    width: 150px;
+    height: 45px;
+    flex-direction: row;
+    justify-content:space-between; 
+    align-items: center;
+    padding: 8px 22px;
+  }
+
+  .icons{
+    position: relative;
+    bottom: -4px;
+    margin-left: 24px;
+  }
+
+  .text-icon{
+    margin-right: 30px;
+    font-size: 11px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    justify-self: flex-start;
+  }
+  
+}
+/*

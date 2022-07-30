@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        height: 3000px;
+      }
+
+      p{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+
+      }
+
+      .sidebar-profil{
+        background-color: rgb(32, 32, 32);
+        position:fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        padding: 10px 10px;
+
+        display:flex;
+        flex-direction: column;
+        ;
+      }
+
+      .profil-pictures{
+        width:50px;
+        height: 50px;
+        border-radius: 50px;
+        object-fit: cover;
+        margin-bottom: 8px;
+      }
+
+      .channel-section{
+        background-color:rgb(50, 50, 50);
+        padding: 14px 0px;
+        
+        display:flex;
+        flex-direction: column;
+
+        position: fixed;
+        left:70px;
+        bottom:0;
+        top:0;
+        
+
+      }
+
+      .infos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .info-text{
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        padding-left: 16px;
+        margin-bottom: 11px;
+      }
+
+      .textplus{
+        color: grey;
+        font-size: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .text{
+        color: grey;
+        font-size: 14px;
+        padding-left: 16px;
+        padding-right: 70px;
+        margin-bottom: 14px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="sidebar-profil">
+      <img class="profil-pictures" src="parrot.jpg">
+      <img class="profil-pictures" src="smallbird.jpg">
+      <img class="profil-pictures" src="Toucan.jpg">
+    </div>
+
+    <div class="channel-section">
+      <div class="infos">
+        <p class="info-text">INFO</p>
+        <p class="textplus">+</p>
+      </div>
+      <p class="text"># new-videos</p>
+      <p class="text"># updates</p>
+      <p class="text"># faq</p>
+      
+    </div>
+
+  </body>
+</html>
